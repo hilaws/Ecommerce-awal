@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <!-- Title -->
+    <title>E-commerce</title>
+
+    <!-- Required Meta Tags Always Come First -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.ico">
+
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900">
+
+    <!-- CSS Global Compulsory -->
+    <link rel="stylesheet" href="{% static 'assets/vendor/bootstrap/bootstrap.min.css'%}">
+
+    <!-- CSS Implementing Plugins -->
+    <link rel="stylesheet" href="{% static 'assets/vendor/icon-awesome/css/font-awesome.min.css'%}">
+    <link rel="stylesheet" href="{% static 'assets/vendor/icon-line-pro/style.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/vendor/slick-carousel/slick/slick.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/vendor/icon-hs/style.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/vendor/hamburgers/hamburgers.min.css'%}">
+    <link rel="stylesheet" href="{% static 'assets/vendor/hs-megamenu/src/hs.megamenu.css'%}">
+    <link rel="stylesheet" href="{% static 'assets/vendor/malihu-scrollbar/jquery.mCustomScrollbar.min.css'%}">
+    <link rel="stylesheet" href="{% static 'assets/vendor/animate.css'%}">
+
+    <!-- CSS Unify Theme -->
+    
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+	
+    <!-- CSS Customization -->
+    <link rel="stylesheet" href="{% static 'assets/css/custom.css'%}">
+	
+	<style>
+	@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css');
+
+
+.effect {
+  text-align: center;
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+  color: #000;
+  text-transform: capitalize;
+  /* background-color: - add your own background-color */
+  font-family: 'Roboto', sans-serif;
+  /* put your font-family */
+  font-size: 25px;
+  padding: 10px 0px;
+  width: 300px;
+  border-radius: 6px;
+  overflow: hidden;
+  font-size: x-large;
+  font-weight: 600;
+}
+
+/* effect-2 styles */
+.effect.effect-2 {
+  -webkit-transition: all 0.2s linear 0s;
+  transition: all 0.2s linear 0s;
+}
+.effect.effect-2:before {
+  
+  font-size: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  top: 0;
+  right: -20px;
+  width: 60px;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0);
+  border-radius: 0px 6px 6px 0px;
+  -webkit-transition: all 0.2s linear 0s;
+  transition: all 0.2s linear 0s;
+  text-align: center;
+  
+}
+.effect.effect-2:hover {
+  text-indent: -30px;
+  text-decoration: none;
+  color: #000000;
+}
+}
+.effect.effect-2:hover:before {
+  right: 0;
+  text-indent: 0px;
+}
+</style>
+	<!--<link rel="stylesheet" href="https://htmlstream.com/preview/unify-v2.6.3/assets/css/unify-core.css">
+	<link rel="stylesheet" href="https://htmlstream.com/preview/unify-v2.6.3/assets/css/unify-components.css">-->
+	 <link rel="stylesheet" href="https://htmlstream.com/preview/unify-v2.6.3/assets/css/unify-globals.css"> 
+  </head>
+
+  <body>
+    <main>
+		<div class="container-fluid" style="background-image: url(https://static.vecteezy.com/system/resources/previews/002/671/655/non_2x/light-gray-blur-background-vector.jpg);">
+			<div class="row mt-0 p-3">
+				<div class="col-sm-12 col-md-12 col-lg-9 px-2 ">
+					<div class="swiper mySwiper shadow-lg rounded">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<img class="img-fluid mx-auto d-block" src="{%static 'assets/img-temp/1920x1080/img1.jpg' %}"/>
+							</div>
+							<div class="swiper-slide">
+								<img class="img-fluid mx-auto d-block" src="{%static 'assets/img-temp/1920x1080/img2.jpg'%}" />
+							</div>
+							<div class="swiper-slide">
+								<img class="img-fluid mx-auto d-block" src="{%static 'assets/img-temp/1920x1080/img3.jpg'%}" />
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-12 col-md-12 col-lg-3 px-2">
+					<div class="m-1" style="background-color:yellow; height:100%; padding-top:20px">
+						<div class="container p-0 m-0">
+							<div class="row p-0 m-0">
+								<div class="mt-5">
+									<a class="effect effect-2" href="{% url 'home:main' %}" title="Learn More">Go Shopping
+									<svg width="1.5em" style="transform: rotate(180deg);
+											transition: margin 500ms ease-in-out;
+											margin-right: 0.625rem;
+											" height="1.0em" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="svelte-1iyybxb right"><path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M4,12l8,8,1.41-1.41L7.83,13H20V11H7.83l5.59-5.59L12,4Z"></path>
+										</svg>
+									
+									</a>
+								</div>
+								<div class="mt-5">
+									<a class="effect effect-2" href="#" title="Learn More">اذهب للتسوق
+									<svg width="1.5em" style="transform: rotate(180deg);
+											transition: margin 500ms ease-in-out;
+											margin-right: 0.625rem;
+											" height="1.0em" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="svelte-1iyybxb right"><path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M4,12l8,8,1.41-1.41L7.83,13H20V11H7.83l5.59-5.59L12,4Z"></path>
+										</svg>
+									</a>
+								</div>
+								
+							
+								
+							
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- Product Blocks v26 -->
+      <section class="g-bg-secondary g-py-100">
+        <div class="container">
+          
+
+          <div id="shortcode26">
+            <div class="shortcode-html">
+              <div class="row g-mx-minus-10">
+                <div class="col-sm-6 col-lg-3 g-px-10 g-mb-30">
+                  <div class="u-shadow-v21">
+                    <div class="g-pos-rel">
+                      <!-- Product Image -->
+                      <div class="js-carousel text-center g-rounded-50 g-bg-gray-light-v5 g-py-3" data-infinite="true" data-fade="true" data-arrows-classes="u-arrow-v1 g-pos-abs g-bottom-0 g-width-30 g-height-30 g-color-white g-color-primary--hover g-font-size-18 g-mb-45"
+                      >
+                        <div class="js-slide">
+                          <img class="img-fluid" src="{%static 'assets/img-temp/650x900/img1.jpg'%}" alt="Image Description">
+                        </div>
+
+                        <div class="js-slide">
+                          <img class="img-fluid" src="{%static 'assets/img-temp/650x900/img2.jpg'%}" alt="Image Description">
+                        </div>
+
+                        <div class="js-slide">
+                          <img class="img-fluid" src="{%static 'assets/img-temp/650x900/img3.jpg'%}" alt="Image Description">
+                        </div>
+                      </div>
+                      <!-- End Product Image -->
+
+                      <!-- Product Info -->
+                      <div class="text-center g-pos-abs g-bottom-20 g-left-0 g-right-0">
+                        
+
+                        <h2 class="g-color-white-opacity-0_8 g-font-weight-400 g-font-size-13">
+                          <a class="u-link-v5 g-color-white-opacity-0_8 g-color-primary--hover g-cursor-pointer" href="#">Category 1</a>
+                        </h2>
+                        
+                      </div>
+                      <!-- End Product Info -->
+                    </div>
+
+                    
+                  </div>
+                </div>
+
+                <div class="col-sm-6 col-lg-3 g-px-10 g-mb-30">
+                  <div class="u-shadow-v21">
+                    <div class="g-pos-rel">
+                      <!-- Product Image -->
+                      <div class="js-carousel text-center g-rounded-50 g-bg-gray-light-v5 g-py-3" data-infinite="true" data-fade="true" data-autoplay="true">
+                        <div class="js-slide">
+                          <img class="img-fluid" src="{%static 'assets/img-temp/650x900/img4.jpg'%}" alt="Image Description">
+                        </div>
+
+                        <div class="js-slide">
+                          <img class="img-fluid" src="{%static 'assets/img-temp/650x900/img5.jpg'%}" alt="Image Description">
+                        </div>
+
+                        <div class="js-slide">
+                          <img class="img-fluid" src="{%static 'assets/img-temp/650x900/img6.jpg'%}" alt="Image Description">
+                        </div>
+                      </div>
+                      <!-- End Product Image -->
+
+                      <!-- Product Info -->
+                      <div class="text-center g-pos-abs g-bottom-20 g-left-0 g-right-0">
+                        
+
+                        <h2 class="g-color-white-opacity-0_8 g-font-weight-400 g-font-size-13">
+                          <a class="u-link-v5 g-color-white-opacity-0_8 g-color-primary--hover g-cursor-pointer" href="#">Category 2</a>
+                        </h2>
+                        
+                      </div>
+                      <!-- End Product Info -->
+                    </div>
+
+                    
+                  </div>
+                </div>
+
+                <div class="col-sm-6 col-lg-3 g-px-10 g-mb-30">
+                  <div class="u-shadow-v21">
+                    <div class="g-pos-rel">
+                      <!-- Product Image -->
+                      <div class="js-carousel text-center g-rounded-50 g-bg-gray-light-v5 g-py-3" data-infinite="true" data-fade="true" data-autoplay="true">
+                        <div class="js-slide">
+                          <img class="img-fluid" src="{%static 'assets/img-temp/650x900/img7.jpg'%}" alt="Image Description">
+                        </div>
+
+                        <div class="js-slide">
+                          <img class="img-fluid" src="{%static 'assets/img-temp/650x900/img8.jpg'%}" alt="Image Description">
+                        </div>
+                      </div>
+                      <!-- End Product Image -->
+
+                      <!-- Product Info -->
+                      <div class="text-center g-pos-abs g-bottom-20 g-left-0 g-right-0">
+                        
+
+                        <h2 class="g-color-white-opacity-0_8 g-font-weight-400 g-font-size-13">
+                          <a class="u-link-v5 g-color-white-opacity-0_8 g-color-primary--hover g-cursor-pointer" href="#">Category 3</a>
+                        </h2>
+                        
+                      </div>
+                      <!-- End Product Info -->
+                    </div>
+
+                    
+                  </div>
+                </div>
+
+                <div class="col-sm-6 col-lg-3 g-px-10 g-mb-30">
+                  <div class="u-shadow-v21">
+                    <div class="g-pos-rel">
+                      <!-- Product Image -->
+                      <div class="js-carousel text-center g-rounded-50 g-bg-gray-light-v5 g-py-3" data-infinite="true" data-fade="true" data-arrows-classes="u-arrow-v1 g-pos-abs g-bottom-0 g-width-30 g-height-30 g-color-white g-color-primary--hover g-font-size-18 g-mb-45"
+                       >
+                        <div class="js-slide">
+                          <img class="img-fluid" src="{%static 'assets/img-temp/650x900/img9.jpg'%}" alt="Image Description">
+                        </div>
+
+                        <div class="js-slide">
+                          <img class="img-fluid" src="{%static 'assets/img-temp/650x900/img10.jpg'%}" alt="Image Description">
+                        </div>
+                      </div>
+                      <!-- End Product Image -->
+
+                      <!-- Product Info -->
+                      <div class="text-center g-pos-abs g-bottom-20 g-left-0 g-right-0">
+                        
+
+                        <h2 class="g-color-white-opacity-0_8 g-font-weight-400 g-font-size-13">
+                          <a class="u-link-v5 g-color-white-opacity-0_8 g-color-primary--hover g-cursor-pointer" href="#">Category 4</a>
+                        </h2>
+                        
+                      </div>
+                      <!-- End Product Info -->
+                    </div>
+
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            
+          </div>
+
+		
+
+        </div>
+      </section>
+      <!-- End Product Blocks v26 -->
+
+      
+		<div class="container-fluid m-0 p-0">
+			<img src="{%static 'assets/img/image.jpg'%}" class="img-fluid" alt="...">
+        </div>
+      
+
+      
+
+      
+    </main>
+
+    <div class="u-outer-spaces-helper"></div>
+
+    <!-- JS Global Compulsory -->
+    <script src="{% static 'assets/vendor/jquery/jquery.min.js'%}"></script>
+    <script src="{% static 'assets/vendor/jquery-migrate/jquery-migrate.min.js'%}"></script>
+    <script src="{% static 'assets/vendor/popper.js/popper.min.js'%}"></script>
+    <script src="{% static 'assets/vendor/bootstrap/bootstrap.min.js'%}"></script>
+
+    <!-- JS Implementing Plugins -->
+    <script src="{% static 'assets/vendor/jquery.countdown.min.js'%}"></script>
+    <script src="{% static 'assets/vendor/slick-carousel/slick/slick.js'%}"></script>
+    <script src="{% static 'assets/vendor/hs-megamenu/src/hs.megamenu.js'%}"></script>
+    <script src="{% static 'assets/vendor/malihu-scrollbar/jquery.mCustomScrollbar.concat.min.js'%}"></script>
+    <script src="{% static 'assets/vendor/appear.js'%}"></script>
+
+    <!-- JS Unify -->
+    <script src="{% static 'assets/js/hs.core.js'%}"></script>
+    <script src="{% static 'assets/js/components/hs.header.js'%}"></script>
+    <script src="{% static 'assets/js/helpers/hs.hamburgers.js'%}"></script>
+    <script src="{% static 'assets/js/components/hs.dropdown.js'%}"></script>
+    <script src="{% static 'assets/js/components/hs.scrollbar.js'%}"></script>
+    <script src="{% static 'assets/js/components/hs.countdown.js'%}"></script>
+    <script src="{% static 'assets/js/components/hs.carousel.js'%}"></script>
+    <script src="{% static 'assets/js/components/hs.go-to.js'%}"></script>
+    <script src="{% static 'assets/js/components/hs.count-qty.js'%}"></script>
+
+    <!-- JS Customization -->
+    <script src="{% static 'assets/js/custom.js'%}"></script>
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- JS Plugins Init. -->
+    <script>
+      $(document).on('ready', function () {
+        // initialization of carousel
+        $.HSCore.components.HSCarousel.init('[class*="js-carousel"]');
+
+        $('#carouselCus1').slick('setOption', 'responsive', [{
+          breakpoint: 1200,
+          settings: {
+            slidesToShow: 4
+          }
+        }, {
+          breakpoint: 992,
+          settings: {
+            slidesToShow: 3
+          }
+        }, {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 2
+          }
+        }], true);
+      });
+
+      // initialization of header
+      $.HSCore.components.HSHeader.init($('#js-header'));
+      $.HSCore.helpers.HSHamburgers.init('.hamburger');
+
+      // initialization of HSMegaMenu component
+      $('.js-mega-menu').HSMegaMenu({
+        event: 'hover',
+        pageContainer: $('.container'),
+        breakpoint: 991
+      });
+
+      // initialization of HSDropdown component
+      $.HSCore.components.HSDropdown.init($('[data-dropdown-target]'), {
+        afterOpen: function () {
+          $(this).find('input[type="search"]').focus();
+        }
+      });
+
+      // initialization of go to
+      $.HSCore.components.HSGoTo.init('.js-go-to');
+
+      // initialization of countdowns
+      var countdowns = $.HSCore.components.HSCountdown.init('.js-countdown', {
+        yearsElSelector: '.js-cd-years',
+        monthElSelector: '.js-cd-month',
+        daysElSelector: '.js-cd-days',
+        hoursElSelector: '.js-cd-hours',
+        minutesElSelector: '.js-cd-minutes',
+        secondsElSelector: '.js-cd-seconds'
+      });
+
+      // initialization of quantity counter
+      $.HSCore.components.HSCountQty.init('.js-quantity');
+
+      $(window).on('load', function () {
+        // initialization of HSScrollBar component
+        $.HSCore.components.HSScrollBar.init($('.js-scrollbar'));
+      });
+
+      
+    </script>
+	<!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        effect: "cube",
+        grabCursor: true,
+		cubeEffect: {
+          shadow: false,
+          slideShadows: false,
+          
+		},
+		loop: true,
+		autoplay: {
+          delay: 2000,
+          disableOnInteraction: false,
+		  },
+        pagination: {
+          el: ".swiper-pagination",
+        },
+		// Navigation arrows
+		navigation: {
+			nextEl: '.swiper-button-next',
+			prevEl: '.swiper-button-prev',
+		  },
+		  
+      });
+	  
+    </script>
+  </body>
+</html>
